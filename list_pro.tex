@@ -1,0 +1,33 @@
+% !TEX program=lualatex
+
+\documentclass{report}
+\usepackage{ctex}
+\begin{document}
+在这个文档中，将尝试使用chapter命令
+\chapter{第一章 可能的标题}
+下面是第一章的内容
+\section{第一节}
+下面是第一节的内容
+\subsection{第一小节}
+歪歪歪
+
+尝试nested list:
+\begin{enumerate}
+    \item apples
+    \item pears
+    \item \begin{enumerate}
+        \item apples
+        \item pears
+        \item \begin{enumerate}
+            \item apples
+            \item pears
+            \item \begin{enumerate}
+                \item apples
+                \item pears
+                \item bananas
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
